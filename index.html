@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/s3bubble-javascript/s3bubble.min.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar-container sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="assets/logo/logo.png" alt=""></a>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active px-2">
+                            <a class="nav-link " href="#"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-car"></i> Destinations </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Destination 1</a>
+                                <a class="dropdown-item" href="#">Destination 2</a>
+                                <a class="dropdown-item" href="#">Destination 3</a>
+                                <a class="dropdown-item" href="#">Destination 4</a>
+                                <a class="dropdown-item" href="#">Destination 5</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-modx"></i> Tour Packages </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Package 1</a>
+                                <a class="dropdown-item" href="#">Package 2</a>
+                                <a class="dropdown-item" href="#">Package 3</a>
+                                <a class="dropdown-item" href="#">Package 4</a>
+                                <a class="dropdown-item" href="#">Package 5</a>
+                                <a class="dropdown-item" href="#">Package 6</a>
+                                <a class="dropdown-item" href="#">Package 7</a>
+                            </div>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link " href="#"><i class="fa fa-address-book-o"></i> Contact <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="landing">        
+        <div class="container">
+            <div class="d-flex flex-column justify-content-end h-100 pb-2 pb-md-5">
+                <h2 class="text-center text-white mb-5"> Our trip planner would help you better</h2>
+            <form action="#" method="">
+                <div class="form-row">
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label for="searchTours" class="sr-only">Search Trours</label>
+                            <input class="border-0 w-100 py-2 px-3" type="text" id="searchTours" name="searchTours" placeholder="Tour Destination">
+                            <span class="fa fa-search iconform"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label for="selectMonth" class="sr-only">Select Month</label>
+                            <select class="w-100 py-2 px-3" name="month" id="selectMonth">
+                                <option selected class="selected">Select month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">Dececmber</option>
+                            </select>
+                            <span class="fa fa-calendar-o iconform"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label for="tourType" class="sr-only">Tour Type</label>
+                            <select class="w-100 py-2 px-3" name="tourType" id="tourType">
+                                <option selected>Tour Type</option>
+                                <option value="adventure">Adventure</option>
+                                <option value="romantic">Romantic</option>
+                                <option value="explore">Explore</option>
+                                <option value="vacation">Vacation</option>
+                            </select>
+                            <span class="fa fa-angle-down iconform"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <input class="border-0 w-100 py-2 px-3" type="submit" id="searchTours" name="searchTours">
+                        </div>
+                    </div>
+                </div>
+            </form>
+           </div>
+        </div>
+    </div>
+
+    <section id="destinations"> 
+        <div class="jumbotron my-0">
+            <div class="container">
+                <h3 class=" text-dark">Popular Destinations</h3>
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-3">
+                    <h5 class="pt-4 mt-4">Find the one that suits you best</h5>
+                    <input class="px-5 py-2" type="button" id="moreDestinations" value="More Destinations">
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 py-md-5 py-2">
+                        <div class="card card1">
+                            <div class="wrapper pt-auto">
+                                <h4 class="text-center text-white">Costa Rica</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 py-md-5 py-2">
+                        <div class="card card2">
+                            <div class="wrapper pt-auto">
+                                <h4 class="text-center text-white">California</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 py-md-5 py-2">
+                        <div class="card card3">
+                            <div class="wrapper pt-auto">
+                                <h4 class="text-center text-white">Netherland</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 py-md-5 py-2">
+                        <div class="card card4">
+                            <div class="wrapper pt-auto">
+                                <h4 class="text-center text-white">Peru</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cheap-deals"> 
+        <div class="jumbotron my-0">
+            <div class="container">
+                <h3 class=" text-dark">Best Tour Packages</h3>
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-3">
+                    <h5 class="pt-4 mt-4">Find the one that is your budget friendly</h5>
+                    <input class="px-5 py-2" type="button" id="moreDestinations" value="More Destinations">
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 py-md-5 py-2">
+                        <a href="#">
+                            <div class="card">
+                                <img src="assets/images/destinations/costarica.jpg" alt="">
+                                <div class="px-4 py-3">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <input class="px-3 py-2" type="button" value="Adventure">
+                                        </div>
+                                        <div class="col-6 ">
+                                            <p class="price text-center">$ 3003</p>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-center pt-2">Costa Rica</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore velit quisquam alias soluta nulla omnis?...<span class="text-secondary">Read More</span></p>
+                                </div>
+                                <div class="overlay">
+                                    <h6 class="text-white"><i class="fa fa-clock-o"></i> 9 <br>days</h6>
+                                </div>
+
+                                <div class="discount text-white">
+                                    <span>25% <br>OFF</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 py-md-5 py-2">
+                        <a href="#">
+                            <div class="card">
+                                <img src="assets/images/destinations/california.jpg" alt="">
+                                <div class="px-4 py-3">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <input class="px-3 py-2" type="button" value="Adventure">
+                                        </div>
+                                        <div class="col-6 ">
+                                            <p class="price text-center">$ 1003</p>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-center pt-2">California</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore velit quisquam alias soluta nulla omnis?...<span class="text-secondary">Read More</span></p>
+                                </div>
+                                <div class="overlay">
+                                    <h6 class="text-white"><i class="fa fa-clock-o"></i> 4 <br>days</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 py-md-5 py-2">
+                        <a href="#">
+                            <div class="card">
+                                <img src="assets/images/destinations/peru.jpg" alt="">
+                                <div class="px-4 py-3">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <input class="px-3 py-2" type="button" value="Adventure">
+                                        </div>
+                                        <div class="col-6 ">
+                                            <p class="price text-center">$ 2003</p>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-center pt-2">Peru</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore velit quisquam alias soluta nulla omnis?...<span class="text-secondary">Read More</span></p>
+                                </div>
+                                <div class="overlay">
+                                    <h6 class="text-white"><i class="fa fa-clock-o"></i> 6 <br>days</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experts"> 
+        <div class="jumbotron my-0">
+            <div class="container">
+                <h2 class="text-center">Customer's feedback</h2>
+                <p class="text-center quotesIcon pt-2 m-0">
+                    <i class="fa fa-first-order"></i>
+                </p>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner p-5">
+                        <div class="carousel-item active">
+                            <h4 class="text-center text-dark px-5"><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quasi exercitationem accusantium deleniti. Saepe, soluta? Ipsum pariatur eaque eos labore! Suscipit, quia ad.</em></h4>
+                            <h5 class="text-center text-secondary py-5">Betty Kho <br>Visited: <a href="#">Singapore</a></h5>
+                        </div>
+                        <div class="carousel-item">
+                            <h4 class="text-center text-dark px-5"><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quasi exercitationem accusantium deleniti. Saepe, soluta? Ipsum pariatur eaque eos labore! Suscipit, quia ad.</em></h4>
+                            <h5 class="text-center text-secondary py-5">Tomislav Mihaljevic <br>Visited: <a href="#">Peru</a></h5>
+                        </div>
+                        <div class="carousel-item">
+                            <h4 class="text-center text-dark px-5"><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quasi exercitationem accusantium deleniti. Saepe, soluta? Ipsum pariatur eaque eos labore! Suscipit, quia ad.</em></h4>
+                            <h5 class="text-center text-secondary py-5">Stephen Abdenour <br>Visited: <a href="#">California</a></h5>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="travelVideo">
+        <div class="jumbotron my-0">
+            <div class="container">
+                <div class="wrapper">
+                    <video controls loop>
+                        <source src="assets/video/Barcelona - 4349.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conclusion">
+        <div class="container">
+            <div class="wrapper">
+                <div class="row justify-content-between m-5 px-4 py-5">
+                    <h4>Whatever be the reason for your tour, we make it awesome</h4>
+                    <input class="px-3 py-1" type="button" value="Explore More">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <h4>Blog Posts</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Chosing tour destination</a></li>
+                        <li><a href="#">Getting full out of the vacation</a></li>
+                        <li><a href="#">10 Best Places to visit on Earth once</a></li>
+                        <li><a href="#">Tips from touring gurus</a></li>
+                        <li><a href="#">How to choose tour destination</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 border-none border-white border-sm-top">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Our Address</h4>
+                    <address>
+                        Lorem ipsum dolor sit <br>amet consectetur,<br> adipisicing elit. Eligendi <br> quod aliquid impedit perferendis repellendus <br>, expedita at.
+                    </address>
+                </div>
+            </div>
+            <div class="row pt-3 mx-3">
+                <div class="col-md-8 offset-md-2 py-3 border-top border-light">
+                    <h6 class="text-center">&copy; Copyright - Round and Round Travels</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/s3bubble-javascript/s3bubble.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

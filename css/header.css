@@ -1,0 +1,42 @@
+.navbar-container {
+    height: auto;
+}
+
+.header {
+    background: white;
+    border-bottom: 2px solid rgb(211, 91, 70);
+}
+
+.navbar-brand {
+    width: 150px;
+}
+
+.navbar-brand img {
+    width: 100%;
+}
+
+.navbar {
+    align-items: flex-end;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-item:hover {
+    background: none;
+    color: rgb(211, 91, 70);
+}
+
+.nav-link {
+    padding-bottom: 0;
+}
+
+.nav-link:hover .fa {
+    color: rgb(211, 91, 70);
+}
+
+.active .fa {
+    color: var(--secondary-color);
+}
