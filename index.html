@@ -13,7 +13,8 @@
     
     <title>Document</title>
 </head>
-<body>
+<body onload="hideLoader()">
+    <div class="loader"></div>
     <div class="navbar-container sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-xl navbar-light">
@@ -121,7 +122,7 @@
                 <h3 class=" text-dark">Popular Destinations</h3>
                 <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-3">
                     <h5 class="pt-4 mt-4">Find the one that suits you best</h5>
-                    <input class="px-5 py-2" type="button" id="moreDestinations" value="More Destinations">
+                    <a href="destinations.html"><input class="px-5 py-2" type="button" id="moreDestinations" value="More Destinations"></a>
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-6 py-md-5 py-2">
