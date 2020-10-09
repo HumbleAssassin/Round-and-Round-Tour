@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/logo/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://unpkg.com/s3bubble-javascript/s3bubble.min.css' type='text/css' media='all' />
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/style.css">
     
-    <title>Document</title>
+    <title>Round and Round</title>
 </head>
 <body onload="hideLoader()">
     <div class="loader"></div>
@@ -26,32 +27,32 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active px-2">
-                            <a class="nav-link " href="#"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link " href="./index.html"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown px-2">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-car"></i> Destinations </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Destination 1</a>
-                                <a class="dropdown-item" href="#">Destination 2</a>
-                                <a class="dropdown-item" href="#">Destination 3</a>
-                                <a class="dropdown-item" href="#">Destination 4</a>
-                                <a class="dropdown-item" href="#">Destination 5</a>
+                                <a class="dropdown-item" href="./destinations.html">Destination 1</a>
+                                <a class="dropdown-item" href="./destinations.html">Destination 2</a>
+                                <a class="dropdown-item" href="./destinations.html">Destination 3</a>
+                                <a class="dropdown-item" href="./destinations.html">Destination 4</a>
+                                <a class="dropdown-item" href="./destinations.html">Destination 5</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown px-2">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-modx"></i> Tour Packages </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Package 1</a>
-                                <a class="dropdown-item" href="#">Package 2</a>
-                                <a class="dropdown-item" href="#">Package 3</a>
-                                <a class="dropdown-item" href="#">Package 4</a>
-                                <a class="dropdown-item" href="#">Package 5</a>
-                                <a class="dropdown-item" href="#">Package 6</a>
-                                <a class="dropdown-item" href="#">Package 7</a>
+                                <a class="dropdown-item" href="./packages.html">Package 1</a>
+                                <a class="dropdown-item" href="./packages.html">Package 2</a>
+                                <a class="dropdown-item" href="./packages.html">Package 3</a>
+                                <a class="dropdown-item" href="./packages.html">Package 4</a>
+                                <a class="dropdown-item" href="./packages.html">Package 5</a>
+                                <a class="dropdown-item" href="./packages.html">Package 6</a>
+                                <a class="dropdown-item" href="./packages.html">Package 7</a>
                             </div>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link " href="#"><i class="fa fa-address-book-o"></i> Contact <span class="sr-only">(current)</span></a>
+                            <a class="nav-link " href="#footer"><i class="fa fa-address-book-o"></i> Contact <span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
                 </div>
@@ -61,58 +62,58 @@
     <div class="landing">        
         <div class="container">
             <div class="d-flex flex-column justify-content-end h-100 pb-2 pb-md-5">
-                <h2 class="text-center text-white mb-5"> Our trip planner would help you better</h2>
-            <form action="#" method="">
-                <div class="form-row">
-                    <div class="col-lg-3">
-                        <div class="form-group">
-                            <label for="searchTours" class="sr-only">Search Trours</label>
-                            <input class="border-0 w-100 py-2 px-3" type="text" id="searchTours" name="searchTours" placeholder="Tour Destination">
-                            <span class="fa fa-search iconform"></span>
+                <h1 class="text-center text-white mb-5">Our trip planner would help you better</h1>
+                <form action="#" method="">
+                    <div class="form-row">
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label for="searchTours" class="sr-only">Search Trours</label>
+                                <input class="border-0 w-100 py-2 px-3" type="text" id="searchTours" name="searchTours" placeholder="Tour Destination">
+                                <span class="fa fa-search iconform"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label for="selectMonth" class="sr-only">Select Month</label>
+                                <select class="w-100 py-2 px-3" name="month" id="selectMonth">
+                                    <option selected class="selected">Select month</option>
+                                    <option value="1">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">Dececmber</option>
+                                </select>
+                                <span class="fa fa-calendar-o iconform"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label for="tourType" class="sr-only">Tour Type</label>
+                                <select class="w-100 py-2 px-3" name="tourType" id="tourType">
+                                    <option selected>Tour Type</option>
+                                    <option value="adventure">Adventure</option>
+                                    <option value="romantic">Romantic</option>
+                                    <option value="explore">Explore</option>
+                                    <option value="vacation">Vacation</option>
+                                </select>
+                                <span class="fa fa-angle-down iconform"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <input class="border-0 w-100 py-2 px-3" type="submit" id="searchTours" name="searchTours">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="form-group">
-                            <label for="selectMonth" class="sr-only">Select Month</label>
-                            <select class="w-100 py-2 px-3" name="month" id="selectMonth">
-                                <option selected class="selected">Select month</option>
-                                <option value="1">January</option>
-                                <option value="2">February</option>
-                                <option value="3">March</option>
-                                <option value="4">April</option>
-                                <option value="5">May</option>
-                                <option value="6">June</option>
-                                <option value="7">July</option>
-                                <option value="8">August</option>
-                                <option value="9">September</option>
-                                <option value="10">October</option>
-                                <option value="11">November</option>
-                                <option value="12">Dececmber</option>
-                            </select>
-                            <span class="fa fa-calendar-o iconform"></span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="form-group">
-                            <label for="tourType" class="sr-only">Tour Type</label>
-                            <select class="w-100 py-2 px-3" name="tourType" id="tourType">
-                                <option selected>Tour Type</option>
-                                <option value="adventure">Adventure</option>
-                                <option value="romantic">Romantic</option>
-                                <option value="explore">Explore</option>
-                                <option value="vacation">Vacation</option>
-                            </select>
-                            <span class="fa fa-angle-down iconform"></span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="form-group">
-                            <input class="border-0 w-100 py-2 px-3" type="submit" id="searchTours" name="searchTours">
-                        </div>
-                    </div>
-                </div>
-            </form>
-           </div>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -122,36 +123,44 @@
                 <h3 class=" text-dark">Popular Destinations</h3>
                 <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-3">
                     <h5 class="pt-4 mt-4">Find the one that suits you best</h5>
-                    <a href="destinations.html"><input class="px-5 py-2" type="button" id="moreDestinations" value="More Destinations"></a>
+                    <a href="./destinations.html"><input class="px-5 py-2" type="button" id="moreDestinations" value="More Destinations"></a>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 py-md-5 py-2">
-                        <div class="card card1">
-                            <div class="wrapper pt-auto">
-                                <h4 class="text-center text-white">Costa Rica</h4>
+                    <div class="col-xl-3 col-lg-4 col-md-6 py-md-5 py-2">
+                        <a href="./destinations.html">
+                            <div class="card card1">
+                                <div class="wrapper pt-auto">
+                                    <h4 class="text-center text-white">Costa Rica</h4>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 py-md-5 py-2">
-                        <div class="card card2">
-                            <div class="wrapper pt-auto">
-                                <h4 class="text-center text-white">California</h4>
+                    <div class="col-xl-3 col-lg-4 col-md-6 py-md-5 py-2">
+                        <a href="./destinations.html">
+                            <div class="card card2">
+                                <div class="wrapper pt-auto">
+                                    <h4 class="text-center text-white">California</h4>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 py-md-5 py-2">
-                        <div class="card card3">
-                            <div class="wrapper pt-auto">
-                                <h4 class="text-center text-white">Netherland</h4>
+                    <div class="col-xl-3 col-lg-4 col-md-6 py-md-5 py-2">
+                        <a href="./destinations.html">
+                            <div class="card card3">
+                                <div class="wrapper pt-auto">
+                                    <h4 class="text-center text-white">Netherland</h4>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 py-md-5 py-2">
-                        <div class="card card4">
-                            <div class="wrapper pt-auto">
-                                <h4 class="text-center text-white">Peru</h4>
+                    <div class="col-xl-3 col-lg-4 col-md-6 py-md-5 py-2">
+                        <a href="./destinations.html">
+                            <div class="card card4">
+                                <div class="wrapper pt-auto">
+                                    <h4 class="text-center text-white">Peru</h4>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -164,11 +173,11 @@
                 <h3 class=" text-dark">Best Tour Packages</h3>
                 <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-3">
                     <h5 class="pt-4 mt-4">Find the one that is your budget friendly</h5>
-                    <input class="px-5 py-2" type="button" id="moreDestinations" value="More Destinations">
+                    <input class="px-5 py-2" type="button" id="moreDestinations" value="Get Best Deals">
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 py-md-5 py-2">
-                        <a href="#">
+                        <a href="./packages.html">
                             <div class="card">
                                 <img src="assets/images/destinations/costarica.jpg" alt="">
                                 <div class="px-4 py-3">
@@ -194,7 +203,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 py-md-5 py-2">
-                        <a href="#">
+                        <a href="./packages.html">
                             <div class="card">
                                 <img src="assets/images/destinations/california.jpg" alt="">
                                 <div class="px-4 py-3">
@@ -216,7 +225,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 py-md-5 py-2">
-                        <a href="#">
+                        <a href="./packages.html">
                             <div class="card">
                                 <img src="assets/images/destinations/peru.jpg" alt="">
                                 <div class="px-4 py-3">
@@ -303,7 +312,7 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-white pt-5">
+    <footer class="bg-dark text-white pt-5" id="footer">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-md-4">

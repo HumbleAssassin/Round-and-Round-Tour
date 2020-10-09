@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/alternate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+    <title>Document</title>
+</head>
+<body onload="hideLoader()">
+    <div class="loader"></div>
+    <div class="navbar-container sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="assets/logo/logo.png" alt=""></a>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active px-2">
+                            <a class="nav-link " href="./index.html"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-car"></i> Destinations </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./destinations.html">Destination 1</a>
+                                <a class="dropdown-item" href="./destinations.html">Destination 2</a>
+                                <a class="dropdown-item" href="./destinations.html">Destination 3</a>
+                                <a class="dropdown-item" href="./destinations.html">Destination 4</a>
+                                <a class="dropdown-item" href="./destinations.html">Destination 5</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-modx"></i> Tour Packages </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./packages.html">Package 1</a>
+                                <a class="dropdown-item" href="./packages.html">Package 2</a>
+                                <a class="dropdown-item" href="./packages.html">Package 3</a>
+                                <a class="dropdown-item" href="./packages.html">Package 4</a>
+                                <a class="dropdown-item" href="./packages.html">Package 5</a>
+                                <a class="dropdown-item" href="./packages.html">Package 6</a>
+                                <a class="dropdown-item" href="./packages.html">Package 7</a>
+                            </div>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link " href="#"><i class="fa fa-address-book-o"></i> Contact <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <section id="landing-destinations">
+        <div class="wrapper d-flex align-items-end justify-content-center h-100">
+            <h1 class="mb-5 pb-5 text-main text-bolder">Find Your Destination</h1>
+        </div>
+    </section>
+
+    <section id="section-destinations">
+        <div class="container">
+            <div class="row flex-column-reverse flex-sm-row">
+                <div class="col-lg-3 px-3 py-5">
+                    <div class="pla-card p-3">
+                        <h5>Search Your Destination</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="destination-gallery">
+        <div class="container pb-5">
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+                <button class="btn" onclick="filterSelection('culture')"> Culture</button>
+                <button class="btn" onclick="filterSelection('suburb')"> Suburb</button>
+                <button class="btn" onclick="filterSelection('history')"> History</button>
+                <button class="btn" onclick="filterSelection('heritage')">Heritage</button>
+              </div>
+            <div class="row">
+                <div class="image-container culture history col-xl-3 col-xl-4 col-md-6 col-12 py-md-5 py-2">
+                    <a href="./packages.html">
+                        <div class="card card1">
+                            <div class="wrapper pt-auto">
+                                <h4 class="text-center text-white">Costa Rica</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="image-container city culture col-xl-3 col-xl-4 col-md-6 col-12 py-md-5 py-2">
+                    <a href="./packages.html">
+                        <div class="card card2">
+                            <div class="wrapper pt-auto">
+                                <h4 class="text-center text-white">California</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="image-container suburb nature col-xl-3 col-xl-4 col-md-6 col-12 py-md-5 py-2">
+                    <a href="./packages.html">
+                        <div class="card card3">
+                            <div class="wrapper pt-auto">
+                                <h4 class="text-center text-white">Netherland</h4> 
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="image-container history nature col-xl-3 col-xl-4 col-md-6 col-12 py-md-5 py-2">
+                    <a href="./packages.html">
+                        <div class="card card4">
+                            <div class="wrapper pt-auto">
+                                <h4 class="text-center text-white">Peru</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="image-container nature suburb col-xl-3 col-xl-4 col-md-6 col-12 py-md-5 py-2">
+                    <a href="./packages.html">
+                        <div class="card card5">
+                            <div class="wrapper pt-auto">
+                                <h4 class="text-center text-white">Bali</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="image-container nature culture col-xl-3 col-xl-4 col-md-6 col-12 py-md-5 py-2">
+                    <a href="./packages.html">
+                        <div class="card card6">
+                            <div class="wrapper pt-auto">
+                                <h4 class="text-center text-white">Indonesia</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="image-container  city history heritage culture nature col-xl-3 col-xl-4 col-md-6 col-12 py-md-5 py-2">
+                    <a href="./packages.html">
+                        <div class="card card7">
+                            <div class="wrapper pt-auto">
+                                <h4 class="text-center text-white">Nepal</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="image-container history culture col-xl-3 col-xl-4 col-md-6 col-12 py-md-5 py-2">
+                    <a href="./packages.html">
+                        <div class="card card8">
+                            <div class="wrapper pt-auto">
+                                <h4 class="text-center text-white">Peru</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+    <footer class="bg-dark text-white pt-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h4>Blog Posts</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Chosing tour destination</a></li>
+                        <li><a href="#">Getting full out of the vacation</a></li>
+                        <li><a href="#">10 Best Places to visit on Earth once</a></li>
+                        <li><a href="#">Tips from touring gurus</a></li>
+                        <li><a href="#">How to choose tour destination</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 border-none  border-white border-sm-top">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Our Address</h4>
+                    <address>
+                        Lorem ipsum dolor sit <br>amet consectetur,<br> adipisicing elit. Eligendi <br> quod aliquid impedit perferendis repellendus <br>, expedita at.
+                    </address>
+                </div>
+            </div>
+            <div class="row pt-3 mx-3">
+                <div class="col-md-8 offset-md-2 py-3 border-top border-light">
+                    <h6 class="text-center">&copy; Copyright - Round and Round Travels</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

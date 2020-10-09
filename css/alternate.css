@@ -1,0 +1,67 @@
+#landing-destinations {
+    width: 100vw;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../assets/images/destinations/destinations.jpg");
+    background-size: cover;
+}
+
+.text-main {
+    color: white;
+}
+
+#section-destinations .pla-card {
+    background: rgb(206, 192, 192);
+    border: none;
+    border-radius: 5px;
+}
+
+.card5 .wrapper {
+    background: url("../assets/images/destinations/Bali.jpg");
+}
+.card6 .wrapper {
+    background: url("../assets/images/destinations/indonesia.jpg");
+}
+.card7 .wrapper {
+    background: url("../assets/images/destinations/kumari.jpg");
+}
+.card8 .wrapper {
+    background: url("../assets/images/destinations/Morocco.jpg");
+}
+
+.image-container {
+    float: left;
+    display: none;
+    width: 33.33%
+}
+
+.row:after {
+    clear: both;
+}
+
+.show {
+    display: block;
+  }
+
+.btn {
+border: none;
+outline: none;
+padding: 12px 16px;
+background-color: white;
+cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+/* #destination-gallery .card {
+    height: 250px;
+
+} */
